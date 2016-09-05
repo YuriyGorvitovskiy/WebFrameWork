@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "module": "system",
         "moduleResolution": "node",
         "sourceMap": true,
         "emitDecoratorMetadata": true,
@@ -9,7 +8,7 @@
         "removeComments": false,
         "noImplicitAny": true,
         "suppressImplicitAnyIndexErrors": true,
-        "outFile": "js/wfw.js"
+        "outDir": "js"
     },
     "compileOnSave": true,
     "buildOnSave": true,
@@ -33,5 +32,8 @@
     ],
     "atom": {
         "formatOnSave": true
-    }
+    },
+    "exclude": [
+      "node_modules"
+    ]
 }
