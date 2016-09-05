@@ -1,6 +1,7 @@
 module.exports = {
     entry: {
-        test:    './js/spec/all.spec.js',
+        demo:    './js/demo/all.demo.js',
+        test:    './js/spec/all.spec.js'
     },
     output: {
         path: __dirname + '/js',
