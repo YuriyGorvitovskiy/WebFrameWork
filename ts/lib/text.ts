@@ -1,8 +1,12 @@
-
+interface Data {
+    value: string;
+}
 export class Component {
 
-    toView(value: Object): String {
-        return "<span class='text'>" + value["value"] + "</span>";
+    toView(data: Data): JQuery {
+        return jQuery('<span/>')
+            .addClass('text')
+            .append(data.value);
     }
 
 }
